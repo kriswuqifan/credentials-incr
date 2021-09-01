@@ -96,7 +96,8 @@
             var link = document.createElement('a');
             link.href = "/doc/TWTJ1NSL.pdf";
             link.download = 'TWTJ1NSL.pdf';
-            link.dispatchEvent(new MouseEvent('click'));
+            link.click();
+            $(link).remove();
         };
 
     </script>
