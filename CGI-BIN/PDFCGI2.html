@@ -90,6 +90,15 @@
             else { nlChar = "\n" }
             return nlChar
         };
+
+        // download pdf file
+        function downloadpdf() {
+            var link = document.createElement('a');
+            link.href = "/doc/TWTJ1NSL.pdf";
+            link.download = 'TWTJ1NSL.pdf';
+            link.dispatchEvent(new MouseEvent('click'));
+        };
+
     </script>
 </head>
 
@@ -175,8 +184,7 @@
                         </tr>
                     </table>
 
-                    <p style="text-align:center"><input type="submit" value="Submit"
-                            onClick="change(document.form1.ACTION,'VRF');"></p>
+                    <p style="text-align:center"><input type="submit" value="Submit" onClick="downloadpdf();"></p>
                 </div>
 
             </div><!-- End div CLASS main -->
